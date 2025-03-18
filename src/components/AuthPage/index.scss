@@ -1,0 +1,44 @@
+.auth-layer {
+    padding: 0 40px;
+    .auth-content {
+      background: #fff;
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        color: #1f1f1f;
+        padding: 40px 0;
+        letter-spacing: 4px;
+      }
+      
+      .tip {
+        color: #666;
+        font-size: 28px;
+        display: block;
+        padding-bottom: 40px;
+        letter-spacing: 4px;
+      }
+    
+    }
+    .auth-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        .auth-btn {
+            background: #07c160;
+            color: #fff;
+            border-radius: 8px;
+            flex: 1;
+            
+          }
+          
+          .close-btn {
+            flex: 1;
+            color: #666;
+            background-color: #fafafa;
+            margin-right: 60px;
+          }
+    }
+  }

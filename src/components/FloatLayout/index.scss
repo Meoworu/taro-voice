@@ -1,0 +1,12 @@
+.float-layout-content {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.at-float-layout__container {
+    border-radius: 24px 24px 0 0;
+    &,.layout-body, .layout-body__content {
+        min-height: 0;
+    }
+    .layout-body{
+        padding: 0;
+    }
+}

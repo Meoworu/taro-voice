@@ -1,0 +1,113 @@
+.profile {
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+
+    .profile-ava {
+      width: 160px;
+      height: 160px;
+      flex-shrink: 0;
+      margin-right: 32px;
+      border: #fff 8px solid;
+      border-radius: 50%;
+
+      .ava {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .profile-info {
+      flex-grow: 1;
+
+      .nickname {
+        display: block;
+        font-size: 40px;
+        font-weight: bold;
+        color: #3f3f3f;
+        margin-bottom: 8px;
+      }
+
+      .desc {
+        display: block;
+        
+      }
+
+      .login{
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #666;
+        .iconfont{
+            font-size: 24px;
+            position: relative;
+            top: 2px;
+            margin-right: 6px;
+        }
+        .login-btn{
+            height: 48px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            margin: 0;
+            background-color: #7373d9;
+        }
+      }
+    }
+  }
+
+  .profile-content {
+    padding: 0 40px;
+    
+    .profile-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 0 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      .card-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        border-bottom: 1px solid #eee;
+        &:active{
+            opacity: 0.6;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .action{
+            font-size: 32px !important;
+            color: #666;
+        }
+        
+        .item-left {
+          display: flex;
+          align-items: center;
+
+          .iconfont {
+            margin-right: 12px;
+            font-size: 36px !important;
+          }
+          .icon{
+            position: relative;
+            top: -3px;
+          }
+
+          .title {
+            font-size: 32px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
