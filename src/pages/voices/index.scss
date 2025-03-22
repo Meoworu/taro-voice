@@ -1,6 +1,12 @@
 .voices-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     .voices-page-content{
+        flex: 1;
+        height: 88px;
         .content-box{
+            height: 100%;
             background-color: #fff;
             overflow: hidden;
             display: flex;
@@ -25,7 +31,6 @@
             .voice-categories {
                 flex: 1;
                 overflow-y: auto;
-                height: calc(100vh - 200px);
 
                 .voice-item {
                     background: #fff;
