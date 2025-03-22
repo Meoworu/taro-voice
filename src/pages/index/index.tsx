@@ -32,9 +32,9 @@ export default function CreationPage() {
             </View>
             <View className='home-footer'>
                 <View className='footer-box'>
-                    <Button className='footer-set button' onClick={() => setVoiceSettingsOpened(true)}><IconFont>&#xe627;</IconFont>声音设置</Button>
-                    <Button className='footer-set button'><IconFont className='qingxu'>&#xe7eb;</IconFont>情绪</Button>
-                    <Button className='footer-set button disabled'><IconFont>&#xe601;</IconFont>背景乐</Button>
+                    <Button className='footer-set' onClick={() => setVoiceSettingsOpened(true)}><IconFont>&#xe627;</IconFont>声音设置</Button>
+                    <Button className='footer-set'><IconFont className='qingxu'>&#xe7eb;</IconFont>情绪</Button>
+                    <Button className='footer-set disabled'><IconFont>&#xe601;</IconFont>背景乐</Button>
                 </View>
                 <View className='footer-box'>
                     <Button type='primary' className='primary-button'>合成试听</Button>

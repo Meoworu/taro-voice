@@ -9,6 +9,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/voices/index",
+          "pathName": "pages/voices/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/works/index",
           "pathName": "pages/works/index",
           "query": "",

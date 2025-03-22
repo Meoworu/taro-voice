@@ -8,6 +8,7 @@ export default defineAppConfig({
     'pages/index/index',
     'pages/tools/index',
     'pages/works/index',
+    'pages/voices/index',
     'pages/profile/index'
   ],
   window: {
