@@ -3,5 +3,19 @@
   "projectname": "taro-ui",
   "setting": {
     "compileHotReLoad": true
+  },
+  "libVersion": "3.7.10",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/works/index",
+          "pathName": "pages/works/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

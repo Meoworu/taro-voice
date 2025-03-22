@@ -1,6 +1,7 @@
 import { View, Text, Image } from '@tarojs/components'
 import IconFont from '@/components/IconFont'
 import './index.scss'
+import SwipeAction from '@/components/SwipeAction'
 
 interface WorkItemProps {
     avatar: string
@@ -14,8 +15,8 @@ export default function WorkItem({ avatar, name, date, onShare }: WorkItemProps)
         <View className='work-item'>
             <View className='work-item-left'>
                 <Image
-                  src={avatar}
-                  className='avatar'
+                    src={avatar}
+                    className='avatar'
                 />
             </View>
             <View className='work-item-center'>
@@ -28,6 +29,6 @@ export default function WorkItem({ avatar, name, date, onShare }: WorkItemProps)
                 </View>
             </View>
         </View>
-            
+
     )
 }

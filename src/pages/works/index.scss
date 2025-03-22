@@ -1,5 +1,19 @@
 .works{
     .works-content-box{
        padding: 0 24px;
+       .at-swipe-action {
+          border-radius: 18px;
+          margin-bottom: 24px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+          .at-swipe-action__option{
+            &:active{
+                opacity: 0.6;
+            }
+            border: 8px solid #fff;
+            border-radius: 18px;
+            width: auto;
+          }
+       }
+
     }
 }

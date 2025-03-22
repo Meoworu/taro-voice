@@ -1,7 +1,7 @@
 .work-item {
     width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-start;
   align-items: center;
   padding: 24px;
   background: #fff;
@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 480px;
     
     .name {
       font-size: 28px;
@@ -42,8 +43,7 @@
 
   .work-item-right {
     display: flex;
-    align-items: center;
-
+    align-items: center;;
     .share-btn {
       display: flex;
       align-items: center;
