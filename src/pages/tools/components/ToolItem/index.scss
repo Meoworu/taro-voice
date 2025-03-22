@@ -1,0 +1,28 @@
+@import url('../../../../app.scss');
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid $theme-color;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  .tool-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  .tool-title {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+  }
+}

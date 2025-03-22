@@ -1,26 +1,45 @@
-$theme-color: RGBA(143,143,255,1);
-$button-bg-color: #aeaef4;
-$button-bg-color-1: RGB(153,153,255);
-Page{
+@import '~taro-ui/dist/style/index.scss';
+@import './theme.scss';
+$theme-color: RGB(143, 143, 255);
+$button-bg-color: RGB(153, 153, 255);
+
+Page {
     height: calc(100vh - env(safe-area-inset-bottom) - 100px);
     background-color: #fafafa;
     position: relative;
     z-index: 99999;
 }
-View,Text{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+View,
+Text {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.primary-button {
-  background: linear-gradient(90deg, $button-bg-color, $button-bg-color-1) !important;
-  border:none;
-  font-size: 28px;
-  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+
+
+button{
+    background-color: #fff;
+    border: 1px solid $button-bg-color;
+    color: $button-bg-color;
+    &.primary-button {
+        background-color: $button-bg-color !important;
+        border: none;
+        font-size: 32px;
+        box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+    }
+    &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
 }
 
-.creation-page{
+.creation-page {
     position: relative;
     height: 100%;
+}
+
+.button-active:active {
+    opacity: 0.6;
 }

@@ -2,7 +2,6 @@ import { PropsWithChildren } from 'react'
 import { useLaunch } from '@tarojs/taro'
 import './app.scss'
 import { View } from '@tarojs/components'
-import 'taro-ui/dist/style/index.scss'
 interface AppProps { }
 
 

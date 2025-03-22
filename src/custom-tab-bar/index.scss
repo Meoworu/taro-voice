@@ -1,3 +1,4 @@
+@import url('../app.scss');
 .tab-bar {
   position: fixed;
   bottom: 0;
@@ -5,7 +6,7 @@
   right: 0;
   background: #fff;
   padding-bottom: env(safe-area-inset-bottom);
-//   box-shadow: 0 -2px 8px RGBA(143,143,255,0.2);
+  padding-top: 10px;
     .tab-bar-content{
         height: 100px;
         display: flex;
@@ -21,15 +22,15 @@
     color: #3f3f3f;
 
     .iconfont {
-      font-size: 34px;
+      font-size: 40px;
     }
 
     &.selected {
-      color: RGBA(143,143,255,1);
+      color: $theme-color;
     }
 
     &-text {
-      font-size: 24px;
+      font-size: 32px;
       margin-top: 8px;
     }
   }

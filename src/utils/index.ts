@@ -2,7 +2,7 @@ import Taro from '@tarojs/taro';
 
 export function uuid(len = 8, radix = 16) {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
-    const value:string[] = [];
+    const value: string[]= [];
     let i = 0;
     radix = radix || chars.length;
     if (len) {
@@ -28,6 +28,7 @@ export function uuid(len = 8, radix = 16) {
     }
     return value.join('');
 }
+
 export function delay(delayTime = 25) {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -49,7 +50,4 @@ export function delayGetClientRect({ selectorStr, delayTime = 500 }) {
         });
     });
 }
-export function truncateString(str: string): string {
-    if (!str || str.length <= 4) return str;
-    return str.substring(0, 3) + '...';
-}
+//

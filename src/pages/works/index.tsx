@@ -2,14 +2,50 @@ import { View, Text } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import NavigationBar from '../../components/NavigationBar'
 import Background from '@/components/Background'
-import WorkItem from './components/WorkItem'
+import WorkItem, { SwipeActionOptionsType } from './components/WorkItem'
 import './index.scss'
-import SwipeAction from '@/components/SwipeAction'
+import Taro from '@tarojs/taro'
 
 export default function Works() {
     useLoad(() => {
         console.log('Page loaded.')
     })
+
+    const onShare = (item: any) => {
+        Taro.showModal({
+            title: '分享',
+            content: `确认分享：${item.name}`,
+            success: function (res) {
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
+                }
+            }
+        })
+    }
+
+    const onDelete = (item: any) => {
+        Taro.showModal({
+            title: '删除',
+            content: `确认删除：${item.name}`,
+            success: function (res) {
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
+                }
+            }
+        })
+    }
+
+    const onSwipeAction = (item: any, type: SwipeActionOptionsType['type']) => {
+        if (type === 'delete') {
+            onDelete(item)
+        } else if (type === 'share') {
+            onShare(item)
+        }
+    }
 
     return (
         <View className='works'>
@@ -22,28 +58,13 @@ export default function Works() {
                     {
                         [1, 2, 3].map((item) => {
                             return (
-                                <SwipeAction key={item} options={[
-                                    {
-                                        text: '分享',
-                                        style: {
-                                            backgroundColor: '#7373d9'
-                                        }
-                                    },
-                                    {
-                                        text: '删除',
-                                        style: {
-                                            backgroundColor: '#FF4949'
-                                        }
-                                    }
-                                ]}
-                                >
-                                    <WorkItem
-                                        date='2023-01-01'
-                                        avatar='https://avatars.githubusercontent.com/u/1?v=4'
-                                        name='作品名称'
-                                        onShare={() => { console.log('share') }}
-                                    />
-                                </SwipeAction>
+                                <WorkItem
+                                    onSwipeAction={onSwipeAction}
+                                    key={item}
+                                    date='2023-01-01'
+                                    avatar='https://avatars.githubusercontent.com/u/1?v=4'
+                                    name='作品名称'
+                                />
                             )
                         })
                     }

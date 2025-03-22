@@ -7,9 +7,10 @@ interface PropsType {
     size?: number;
     children?: React.ReactNode;
     className?: string;
+    onClick?: () => void;
 }
-function IconFont({name, children, className}: PropsType) {
-    return <Text className={classNames('iconfont', className)} style={{ fontFamily: "iconfont", fontStyle: "normal"}}>{ name || children }</Text>;
+function IconFont({name, children, className, onClick}: PropsType) {
+    return <Text className={classNames('iconfont', className)} onClick={() => onClick?.()} style={{ fontFamily: "iconfont", fontStyle: "normal"}}>{ name || children }</Text>;
 }
 
 export default IconFont;

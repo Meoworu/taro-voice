@@ -1,0 +1,25 @@
+.tools {
+  .tools-content {
+    padding: 24px;
+
+    .tools-group{
+        padding: 32px;
+        border-radius: 24px;
+        background-color: #fff;
+        margin-bottom: 32px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+    .category-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 24px;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+  }
+}

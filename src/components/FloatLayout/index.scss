@@ -1,10 +1,25 @@
 .float-layout-content {
   padding-bottom: env(safe-area-inset-bottom);
+  .float-layout-title{
+    padding: 24px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .icon-close{
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+  }
 }
 .at-float-layout__container {
     border-radius: 24px 24px 0 0;
     &,.layout-body, .layout-body__content {
         min-height: 0;
+        max-height: none;
     }
     .layout-body{
         padding: 0;
