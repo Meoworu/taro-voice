@@ -1,6 +1,18 @@
 .voice-settings {
   padding: 24px;
+  padding-bottom: var(safe-area-inset-bottom);
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    .slider-box{
+        flex-grow: 1;
+    }
+    .footer-action{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
   .slider-item {
     margin-bottom: 32px;
 

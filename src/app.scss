@@ -1,5 +1,5 @@
 @import '~taro-ui/dist/style/index.scss';
-@import './theme.scss';
+// @import './theme.scss';
 $theme-color: RGB(143, 143, 255);
 $button-bg-color: RGB(153, 153, 255);
 
@@ -23,6 +23,7 @@ button{
     background-color: #fff;
     border: 1px solid $button-bg-color;
     color: $button-bg-color;
+    padding: 12px 24px;
     &.primary-button {
         background-color: $button-bg-color !important;
         border: none;
@@ -40,6 +41,8 @@ button{
     height: 100%;
 }
 
-.button-active:active {
+.button-hover {
     opacity: 0.6;
+    background-color: #fff !important;
+    color: $button-bg-color !important;
 }
