@@ -65,7 +65,7 @@ export default function VoicesPage() {
     }
     return (
         <View className='voices-page'>
-            <NavigationBar title='音色' />
+            <NavigationBar title='音色' showBack/>
             <View className='voices-page-content'>
                 {/* <AtSearchBar
                         showActionButton

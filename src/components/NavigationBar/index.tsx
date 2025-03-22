@@ -3,6 +3,7 @@ import { memo } from 'react';
 import Taro from '@tarojs/taro';
 import './index.scss';
 import { NAVIGATION_BAR_HEIGHT } from '@/constant';
+import IconFont from '../IconFont';
 
 interface PropsType {
     title?: string | React.ReactNode;
@@ -43,7 +44,7 @@ function NavigationBar({
             <View className='nav-content'>
                 {showBack && (
                     <View className='nav-back' onClick={handleBack}>
-                        <Text className='back-icon'>&#xe697;</Text>
+                        <IconFont className='back-icon'>&#xe631;</IconFont>
                     </View>
                 )}
                 <View className='nav-title'>
