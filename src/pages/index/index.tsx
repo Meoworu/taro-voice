@@ -1,4 +1,4 @@
-import { View, Button } from '@tarojs/components'
+import { View, Button, Text } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import NavigationBar from '@/components/NavigationBar'
 import './index.scss'
@@ -32,12 +32,21 @@ export default function CreationPage() {
             </View>
             <View className='home-footer'>
                 <View className='footer-box'>
-                    <Button className='footer-set' onClick={() => setVoiceSettingsOpened(true)}><IconFont>&#xe627;</IconFont>声音设置</Button>
-                    <Button className='footer-set'><IconFont className='qingxu'>&#xe7eb;</IconFont>情绪</Button>
-                    <Button className='footer-set disabled'><IconFont>&#xe601;</IconFont>背景乐</Button>
+                    <View className='footer-set' onClick={() => setVoiceSettingsOpened(true)}>
+                        <View className='icon-box'><IconFont>&#xe627;</IconFont></View>
+                        <Text>声音设置</Text>
+                    </View>
+                    <View className='footer-set'>
+                        <View className='icon-box'><IconFont className='qingxu'>&#xe602;</IconFont></View>
+                        <Text>情绪</Text>
+                    </View>
+                    <View className='footer-set disabled'>
+                        <View className='icon-box'><IconFont>&#xe601;</IconFont></View>
+                        <Text>背景乐</Text>
+                    </View>
                 </View>
                 <View className='footer-box'>
-                    <Button type='primary' className='primary-button'>合成试听</Button>
+                    <Button type='primary' className='primary-button default'>合成试听</Button>
                     <Button type='primary' className='primary-button'>保存作品</Button>
                 </View>
             </View>

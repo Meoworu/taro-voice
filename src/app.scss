@@ -29,6 +29,11 @@ button{
         border: none;
         font-size: 32px;
         box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+        &.default{
+            background-color: #fff !important;
+            border: 1px solid $button-bg-color!important;
+            color: $button-bg-color!important;
+        }
     }
     &.disabled {
         opacity: 0.5;

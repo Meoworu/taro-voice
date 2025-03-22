@@ -22,21 +22,24 @@
     padding-bottom: 40px;
     .footer-box{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-start;
         margin-top: 32px;
         .footer-set{
+            display: flex;
+            margin-right: 32px;
+            align-items: center;
+            height: 64px;
             flex-grow: 1;
-            margin-right: 20px;
-            padding: 4px 24px;
-            
+            background-color: #fff;
+            border-radius: 16px;
+            cursor: pointer;
+            justify-content: center;
+            Text{
+                color: #666;
+                font-size: 32px;
+            }
             .iconfont{
-                position: relative;
-                margin-right: 12px;
-                font-weight: bold;
-                font-size: 36px;
-                &.qingxu{
-                    font-weight: 400;
-                }
+                margin-right: 16px;
             }
             &:last-child{
                 margin-right: 0;
