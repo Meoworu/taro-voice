@@ -1,8 +1,7 @@
-@import '~taro-ui/dist/style/index.scss';
-// @import './theme.scss';
-$theme-color: RGB(143, 143, 255);
-$button-bg-color: #A294F9;
-$color-text-base: #1f1f1f;
+@import '~taro-ui/dist/style/components/index.scss';
+$theme-color: RGB(143, 143, 255) !default;
+$button-bg-color: #A294F9 !default;
+$color-text-base: #1f1f1f !default;
 
 Page {
     height: calc(100vh - env(safe-area-inset-bottom) - 100px);
