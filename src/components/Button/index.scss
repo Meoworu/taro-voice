@@ -1,0 +1,63 @@
+@import '../../app.scss';
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+  padding: 0 32px;
+  background-color: #fff;
+  color: $color-text-base;
+  cursor: pointer;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+  
+  &::after {
+    display: none;
+  }
+
+  // 类型样式
+  &--primary {
+    background-color: $button-bg-color;
+    color: #fff;
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &--default {
+    border: $button-bg-color 1px solid;
+    color: $button-bg-color;
+
+    &:active {
+      background-color: $theme-color;
+    }
+  }
+
+  // 尺寸样式
+  &--large {
+    height: 100px;
+    font-size: 32px;
+  }
+
+  &--medium {
+    height: 88px;
+    font-size: 28px;
+  }
+
+  &--small {
+    height: 72px;
+    font-size: 24px;
+    padding: 0 24px;
+  }
+
+  // 禁用状态
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

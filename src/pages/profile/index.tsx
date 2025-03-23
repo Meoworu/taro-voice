@@ -1,11 +1,11 @@
-import { View, Text, Image, Button } from '@tarojs/components'
-import { AtButton } from 'taro-ui';
+import { View, Text, Image } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import NavigationBar from '../../components/NavigationBar'
 import Background from '@/components/Background'
 import { getPhoneNumber, getStoredUserInfo } from '@/utils/login'
 import './index.scss'
 import IconFont from '@/components/IconFont'
+import Button from '@/components/Button'
 
 export default function Profile() {
   useLoad(() => {

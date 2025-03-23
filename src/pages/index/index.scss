@@ -28,15 +28,10 @@
             display: flex;
             margin-right: 32px;
             align-items: center;
-            height: 64px;
             flex-grow: 1;
-            background-color: #fff;
-            border-radius: 16px;
-            cursor: pointer;
             justify-content: center;
             Text{
                 color: #666;
-                font-size: 32px;
             }
             .iconfont{
                 margin-right: 16px;
@@ -46,7 +41,7 @@
             }
         }
     }
-    .primary-button{
+    .action-button{
         flex-grow: 1;
         margin-right: 24px;
         font-weight: bold;

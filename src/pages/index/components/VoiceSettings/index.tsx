@@ -1,8 +1,9 @@
-import { View, Slider, Button } from '@tarojs/components'
+import { View, Slider } from '@tarojs/components'
 import { useState } from 'react'
 import FloatLayout from '@/components/FloatLayout'
 import "taro-ui/dist/style/components/slider.scss";
 import './index.scss'
+import Button from '@/components/Button';
 
 interface VoiceSettingsProps {
     isOpened: boolean
@@ -26,7 +27,9 @@ export default function VoiceSettings({ isOpened, onClose }: VoiceSettingsProps)
                     <View className='slider-item'>
                         <View className='slider-label'>语速</View>
                         <Slider
+                            className='slider-volume'
                             value={speed}
+                            activeColor='#A294F9'
                             min={0}
                             max={100}
                             onChange={(e) => setSpeed(e.detail.value)}
@@ -35,6 +38,8 @@ export default function VoiceSettings({ isOpened, onClose }: VoiceSettingsProps)
                     <View className='slider-item'>
                         <View className='slider-label'>语调</View>
                         <Slider
+                            className='slider-volume'
+                            activeColor='#A294F9'
                             value={pitch}
                             min={0}
                             max={100}
@@ -44,7 +49,8 @@ export default function VoiceSettings({ isOpened, onClose }: VoiceSettingsProps)
                     <View className='slider-item'>
                         <View className='slider-label'>音量</View>
                         <Slider
-                            selectedColor='#000'
+                            className='slider-volume'
+                            activeColor='#A294F9'
                             value={volume}
                             min={0}
                             max={100}

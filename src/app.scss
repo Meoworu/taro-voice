@@ -1,7 +1,8 @@
 @import '~taro-ui/dist/style/index.scss';
 // @import './theme.scss';
 $theme-color: RGB(143, 143, 255);
-$button-bg-color: RGB(153, 153, 255);
+$button-bg-color: #A294F9;
+$color-text-base: #1f1f1f;
 
 Page {
     height: calc(100vh - env(safe-area-inset-bottom) - 100px);
@@ -18,36 +19,7 @@ Text {
 }
 
 
-
-button{
-    background-color: #fff;
-    border: 1px solid $button-bg-color;
-    color: $button-bg-color;
-    padding: 12px 24px;
-    &.primary-button {
-        background-color: $button-bg-color !important;
-        border: none;
-        font-size: 32px;
-        box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
-        &.default{
-            background-color: #fff !important;
-            border: 1px solid $button-bg-color!important;
-            color: $button-bg-color!important;
-        }
-    }
-    &.disabled {
-        opacity: 0.5;
-        pointer-events: none;
-    }
-}
-
 .creation-page {
     position: relative;
     height: 100%;
-}
-
-.button-hover {
-    opacity: 0.6;
-    background-color: #fff !important;
-    color: $button-bg-color !important;
 }
